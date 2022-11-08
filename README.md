@@ -8,6 +8,9 @@ Para iniciar o projeto basta clonar e rodar o docker compose na raiz `docker-com
 
 é necessário existir um .env na raiz do projeto, com essas variáveis:
 
+## É importante ter esse .env
+
+
 ```
 LOGIN=""
 PASSWORD=""
@@ -20,10 +23,16 @@ Comando para subir o projeto, tanto front quanto back:
 docker-compose up -d
 ```
 
-## Rodar projeto apenas back-end
+## Rotas disponíveis
 
-```json
-cd BACK && docker-compose up -d
+```
+(POST)      http://0.0.0.0:5000/login/
+
+(GET)       http://0.0.0.0:5000/cards/
+(POST)      http://0.0.0.0:5000/cards/
+(PUT)       http://0.0.0.0:5000/cards/{id}
+(DELETE)    http://0.0.0.0:5000/cards/{id}
+
 ```
 
 ## Ferramentas necessárias
